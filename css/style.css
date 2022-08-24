@@ -1,0 +1,524 @@
+/*---------------------------------------------------------------
+
+  Project Name: Omanez - Personal Website HTML Template
+  File Name: style.css
+  Author: Peng Lam
+  Author URI: http://khaitawng.com
+  Version: 1.0.0
+
+------------------------------------------------------------------*/
+/*----------------------------------------------------------------
+
+// Table of contents //
+
+  - Body
+  - Typography
+  - Buttons
+  - General
+  - Preloader
+  - Home section
+  - Work section
+  - About section
+  - Testimonial section
+  - Contact section
+  - Footer section
+  - Mobile Responsive styles
+
+------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Tenor+Sans');
+
+body {
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+
+
+/*---------------------------------------
+   Typorgraphy              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-style: normal;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 35px;
+  line-height: inherit;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+h4 {
+  color: #999999;
+  font-size: 10px;
+  line-height: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+
+
+/*---------------------------------------
+   Buttons               
+-----------------------------------------*/
+
+.btn-success:focus {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.section-btn {
+  background: #313238;
+  border: 3px solid transparent;
+  color: #ffffff;
+  padding: 12px 28px;
+  margin-top: 22px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  margin-right: 14px;
+}
+
+.section-btn:focus,
+.section-btn:hover {
+  background: #ffffff;
+  border-color: transparent;
+  color: #b29770;
+}
+
+
+
+/*---------------------------------------
+   General               
+-----------------------------------------*/
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover, a:active, a:focus {
+  color: #b29770;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #b29770;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+.section-title {
+  padding-bottom: 22px;
+}
+
+#work,
+#about, #testimonial,
+#contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+#testimonial,
+#contact, footer {
+  text-align: center;
+}
+
+
+
+/*---------------------------------------
+     Preloader section              
+-----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  position: relative;
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #b29770;
+  border-top-color: #f9f9f9;
+  animation: spinner .6s linear infinite;
+}
+
+@-webkit-@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+
+#home {
+    background: url('../images/bg3.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+     color: #ffffff;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+#home .overlay {
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+/*---------------------------------------
+    About section              
+-----------------------------------------*/
+
+#about .about-desc {
+  padding-top: 26px;
+}
+
+#about .about-desc img {
+  float: left;
+  margin: 0 28px 18px 0;
+}
+
+#about .skills-thumb {
+  background: rgba(250,250,250,0.9);
+  padding: 32px 42px;
+}
+
+#about .progress {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+  height: 4px;
+}
+
+#about .progress-bar-primary {
+  background: #232B2B;
+}
+
+#about strong,
+#about span {
+  color: #555555;
+  font-weight: normal;
+  display: inline-block;
+  letter-spacing: 0.1px;
+  padding-bottom: 8px;
+}
+
+
+
+/*---------------------------------------
+   Testimonial section              
+-----------------------------------------*/
+
+#testimonial {
+  background: url('../images/testimonial-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+#testimonial .overlay {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#testimonial .fa {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+#testimonial p {
+  color: #ffffff;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: inherit;
+}
+
+#testimonial .tst-author {
+  margin-top: 22px;
+}
+
+
+
+/*---------------------------------------
+    Work section              
+-----------------------------------------*/
+
+#work {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#work .work-thumb {
+  text-align: center;
+  margin-bottom: 26px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#work .work-thumb:hover {
+  background: #ffffff;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#work .work-thumb img {
+  width: 100%;
+  cursor: crosshair;
+}
+
+#work .work-thumb-item {
+  background: rgba(250,250,250,0.9);
+  padding: 8px 0px 12px 0px;
+  margin-top: 16px;
+}
+
+
+
+/*---------------------------------------
+    Contact section              
+-----------------------------------------*/
+
+#contact .text-success,
+#contact .text-danger {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#contact .form-control {
+  border: 2px solid #f0f0f0;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#contact .form-control:focus {
+  border-color: #999999;
+}
+
+#contact input {
+  height: 55px;
+}
+
+#contact textarea {
+  border: 1px solid #f0f0f0;
+}
+
+#contact button#submit {
+  background: #b29770;
+  border: none;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 18px;
+  height: 55px;
+}
+
+#contact button#submit:hover {
+  background: #1b1b1b;
+  color: #ffffff;
+}
+
+
+
+/* Back top */
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top:hover {
+    background: #b29770;
+    color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+
+footer {
+  background: #000000;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+footer .footer-copyright h2 {
+  color: #ffffff;
+}
+
+footer i {
+  color: #999999;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+footer a {
+  color: #777777;
+}
+
+
+
+/*---------------------------------------
+   Mobile Responsive styles              
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+
+  #about .skills-thumb {
+    margin-top: 32px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #testimonial p {
+    font-size: 19px;
+  }
+
+  footer .footer-copyright h2 {
+    margin-bottom: 22px;
+  }
+
+  footer .footer-address {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+}
+
+
+
