@@ -237,9 +237,7 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    
     background-position: center center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -251,7 +249,7 @@ a:hover, a:active, a:focus {
      align-items: center;
      color: #ffffff;
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     position: relative;
     text-align: center;
 }
