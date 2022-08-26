@@ -232,7 +232,7 @@ a:hover, a:active, a:focus {
     Home section              
 -----------------------------------------*/
 
-#home {
+.home {
     background: url('../images/bg3.jpg');
     background-repeat: no-repeat;
     background-color:#fffff;
