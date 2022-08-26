@@ -234,7 +234,6 @@ a:hover, a:active, a:focus {
 
 .home {
     background: url('../images/bg3.jpg');
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color:#fffff;
     background-size: cover;
