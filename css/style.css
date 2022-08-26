@@ -233,9 +233,12 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-    background: url('../images/bg3.jpg') 100% 0 repeat-y fixed;
-    background-size: contain;
-    background-position: center;
+    background: url('../images/bg3.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -245,7 +248,8 @@ a:hover, a:active, a:focus {
     -ms-flex-align: center;
      align-items: center;
      color: #ffffff;
-    height: 100vh;
+    height: auto;
+    width: 100%;
     position: relative;
     text-align: center;
 }
