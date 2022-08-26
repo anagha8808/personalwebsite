@@ -233,11 +233,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-    background: url('../images/bg3.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-    background-size: cover;
-    
+    background: url('../images/bg3.jpg') 50% 0 repeat-y fixed;
+    background-size: contain;
     background-position: center center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -249,10 +246,10 @@ a:hover, a:active, a:focus {
      align-items: center;
      color: #ffffff;
     height: 100vh;
-    width: 100vh;
     position: relative;
     text-align: center;
 }
+
 
 #home .overlay {
   background: rgba(0,0,0,0.4);
