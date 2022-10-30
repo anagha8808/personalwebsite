@@ -29,11 +29,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Tenor+Sans');
 
 body {
-    background: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    overflow-x: hidden;
+    /* background: #ffffff; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* overflow-x: hidden; */
+    font-family: Nunito;
+    letter-spacing: .0625em;
 }
 
 
@@ -43,8 +45,10 @@ body {
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-style: normal;
-  font-weight: 300;
+  /* font-style: normal;
+  font-weight: 300; */
+  font-family: Nunito;
+  letter-spacing: .0625em;
 }
 
 h1 {
@@ -232,12 +236,12 @@ a:hover, a:active, a:focus {
     Home section              
 -----------------------------------------*/
 
-#home {
-    background: url('../images/bg3.jpg');
-    background-repeat: no-repeat;
-    background-color:#fffff;
+.home {
+    background: url('../images/3.jpg');
+    
+    background-repeat: no-repeat,repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -248,11 +252,11 @@ a:hover, a:active, a:focus {
      align-items: center;
      color: #ffffff;
     height: 100vh;
-    width:100%;
+    width: 100%;
     position: relative;
     text-align: center;
+    
 }
-
 
 #home .overlay {
   background: rgba(0,0,0,0.4);
@@ -311,7 +315,10 @@ a:hover, a:active, a:focus {
   letter-spacing: 0.1px;
   padding-bottom: 8px;
 }
-
+.img-circle{
+  border-radius: 21% !important;
+  width: 17em !important;
+}
 
 
 /*---------------------------------------
